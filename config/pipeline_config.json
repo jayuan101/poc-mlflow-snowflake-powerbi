@@ -1,0 +1,13 @@
+{
+  "pipelines": [
+    {
+      "pipeline_id": "P001",
+      "source_name": "operational_events",
+      "source_type": "csv",
+      "bronze_table": "bronze.raw_operational_events",
+      "silver_table": "silver.operational_events",
+      "gold_table": "gold.kpi_operational_summary",
+      "enabled": true
+    }
+  ]
+}
